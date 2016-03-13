@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏分类 - {$cate.name}</title>
+</head>
+<body>
+    <a href="/">首页</a> &gt; <a href="__URL__/lists">游戏分类</a> &gt; {$cate.name}
+    <hr>
+    <volist name="games" id="game">
+        
+        {$game.name} <img src="{$game.icon|get_cover='path'}" alt=""> <br>
+    </volist>
+    <empty>
+        无数据
+    </empty>
+</body>
+</html>

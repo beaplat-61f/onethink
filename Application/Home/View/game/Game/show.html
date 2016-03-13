@@ -1,0 +1,187 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <div class="back_nav">
+
+        <a class="back" href="../index.html">游戏详情</a>
+
+        <span id="menu">导航</span>
+
+        <div id="guide">
+
+            <ul>
+
+                <li><a href="../index.html">首页</a></li>
+
+                <li><a href="danji.html">单机</a></li>
+
+                <li><a href="danji.html">网游</a></li>
+
+                <li><a href="danji.html">应用</a></li>
+
+                <li><a href="danji.html">攻略</a></li>
+
+                <li><a href="danji.html">资讯</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</block>
+<block name="container">
+
+    <dl class="game_detail">
+
+        <dt>
+
+            <img src="{$game.icon|get_cover='path'}" alt="{$game.name}">
+            <a href="{$game.download_url}" class="btn_down">下载</a>
+
+        </dt>
+
+        <dd class="title">{$game.name}</dd>
+
+        <dd><span class="star"><i style="width:99%"></i></span><span class="score">9.9分</span><span class="ping">(已有1人评分)</span>
+        </dd>
+
+        <dd>大小：155.1 MB</dd>
+
+        <dd>更新：2014-08-12</dd>
+
+        <dd>当前版本：{$game.version}</dd>
+
+        <dd>人气：6</dd>
+
+    </dl>
+
+    <div id="game_img">
+
+        <h3>游戏截图</h3>
+
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+                <volist name="game.thumb" id="thumb">
+
+                    <div class="swiper-slide">
+                        <img src="{$thumb|get_cover='path'}" alt="">
+                    </div>
+                </volist>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <h3>内容提要</h3>
+
+        <p>{$game.description}</p>
+
+    </div>
+
+    <div class="container gamerec">
+
+        <div class="hd">
+
+            <a class="more" href="#">更多</a>
+
+            <h3>游戏推荐</h3>
+
+        </div>
+
+        <ul class="gamelist">
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1397724791.jpg" alt="掌上炸翻天"></a>
+
+                <h3><a href="12234.html">万人炸金花</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1405574802.jpg" alt="女神斗地主"></a>
+
+                <h3><a href="12234.html">女神斗地主</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1407122236.jpg" alt="天天爱闯关"></a>
+
+                <h3><a href="12234.html">天天爱闯关</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1403165654.jpg" alt="嘉米麻将"></a>
+
+                <h3><a href="12234.html">嘉米麻将</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1403920246.jpg" alt="万人斗地主"></a>
+
+                <h3><a href="12234.html">万人斗地主</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1407480562.jpg" alt="吸血鬼日记"></a>
+
+                <h3><a href="12234.html">吸血鬼日记</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1399441026.jpg" alt="3D狂野飞车"></a>
+
+                <h3><a href="12234.html">3D狂野飞车</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1407317142.jpg" alt="天天美女"></a>
+
+                <h3><a href="12234.html">天天美女</a></h3>
+
+            </li>
+
+            <li>
+
+                <a href="12234.html"><img src="../upload/1396605515.jpg" alt="来自星星的僵尸"></a>
+
+                <h3><a href="12234.html">来自星星的僵尸</a></h3>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+<script>
+
+    var mySwiper = new Swiper('.swiper-container', {
+
+        pagination: '.pagination',
+
+        paginationClickable: true,
+
+        slidesPerView: 'auto'
+
+    })
+
+</script>
+</block>

@@ -1,0 +1,27 @@
+<extend name="Base/common"/>
+
+<block name="title">游戏分类</block>
+<block name="css">
+    <link rel="stylesheet" href="__CSS__/game/cate.css">
+</block>
+<block name="container">
+    <a href="/">首页</a> &gt; 游戏分类
+    <hr>
+
+    <div class="list">
+    <ul>
+        <volist name="list" id="data">
+            <li>
+                <a href="__URL__/allGames/cateId/{$data.id}">
+                    <img src="{$data.icon|get_cover='path'}" alt="{$data.name}" class="radius img-responsive">
+                    {$data.name}
+                </a>
+            </li>
+        </volist>
+
+        <div class="clear"></div>
+    </ul>
+    </div>
+
+    <!--<div class="bottom"></div>-->
+</block>
