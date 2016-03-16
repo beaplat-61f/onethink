@@ -5,13 +5,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-<title>手机游戏免费下载触屏版自适应手机wap软件网站模板下载</title>
+<title>文章列表</title>
 
 <meta name="keywords" content="" />
 
 <meta name="description" content="" />
 
 <link href="/Public/Home/css/game/style.css" rel="stylesheet" media="screen">
+
+
 
 <script src="/Public/static/jquery-2.0.3.min.js" type="text/javascript"></script>
 
@@ -61,28 +63,41 @@
 </script>
 </head>
 <body>
-	<!-- 主体 -->
-	
-    <header class="jumbotron subhead" id="overview">
-        <div class="container">
-            <h2>源自相同起点，演绎不同精彩！</h2>
-            <p class="lead"></p>
-        </div>
-    </header>
+    <!--main start-->
+    <div class="main">
+    
 
-<div id="main-container" class="container">
-    <div class="row">
-        
-        <!-- 左侧 nav
-        ================================================== -->
-            <div class="span3 bs-docs-sidebar">
-                
-                <ul class="nav nav-list bs-docs-sidenav">
-                    <?php echo W('Category/lists', array($category['id'], ACTION_NAME == 'index'));?>
+        <div class="header">
+
+            <span id="menu">导航</span>
+
+            <div id="guide">
+
+                <ul>
+
+                    <li><a href="index.html">首页</a></li>
+
+                    <li><a href="android/danji.html">单机</a></li>
+
+                    <li><a href="android/danji.html">网游</a></li>
+
+                    <li><a href="android/danji.html">应用</a></li>
+
+                    <li><a href="android/danji.html">攻略</a></li>
+
+                    <li><a href="android/danji.html">资讯</a></li>
+
                 </ul>
+
             </div>
-        
-        
+
+            <a class="search" href="index.html">搜索</a>
+
+            <img class="logo" src="/Public/Home/images/game/logo.png">
+
+        </div>
+    
+    
     <a href="/">首页</a> &gt; <?php echo ($category["title"]); ?>
     <div class="span9">
         <!-- Contents
@@ -111,17 +126,13 @@
     </div>
     </div>
 
-    </div>
 </div>
+    <!--main end-->
 
-<script type="text/javascript">
-    $(function(){
-        $(window).resize(function(){
-            $("#main-container").css("min-height", $(window).height() - 343);
-        }).resize();
-    })
-</script>
-	<!-- /主体 -->
-
+    <!--footer start-->
+    <p class="footer"><a href="default.htm">手机版</a><a id="return" href="javascript:void(0)" onClick="scroll(0,0)">回顶部</a>
+    更多>><a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+</p>
+    <!--footer end-->
 </body>
 </html>

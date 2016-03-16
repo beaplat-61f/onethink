@@ -13,6 +13,8 @@
 
 <link href="/Public/Home/css/game/style.css" rel="stylesheet" media="screen">
 
+
+
 <script src="/Public/static/jquery-2.0.3.min.js" type="text/javascript"></script>
 
 <script src="/Public/Home/js/game/swiper-2.0.min.js" type="text/javascript"></script>
@@ -61,12 +63,45 @@
 </script>
 </head>
 <body>
-	<!-- 主体 -->
-	
+    <!--main start-->
+    <div class="main">
+    
+
+        <div class="header">
+
+            <span id="menu">导航</span>
+
+            <div id="guide">
+
+                <ul>
+
+                    <li><a href="index.html">首页</a></li>
+
+                    <li><a href="android/danji.html">单机</a></li>
+
+                    <li><a href="android/danji.html">网游</a></li>
+
+                    <li><a href="android/danji.html">应用</a></li>
+
+                    <li><a href="android/danji.html">攻略</a></li>
+
+                    <li><a href="android/danji.html">资讯</a></li>
+
+                </ul>
+
+            </div>
+
+            <a class="search" href="index.html">搜索</a>
+
+            <img class="logo" src="/Public/Home/images/game/logo.png">
+
+        </div>
+    
+    
     <header class="jumbotron subhead" id="overview">
-		<div class="container">
-			<h2><?php echo ($info["title"]); ?></h2>
-			<p>
+        <div class="container">
+            <h2><?php echo ($info["title"]); ?></h2>
+            <p>
 				<span  class="pull-left">
 					<span class="author"><?php echo (get_username($info["uid"])); ?></span>
 					<span> 发表于 <?php echo (date('Y-m-d H:i',$info["create_time"])); ?></span>
@@ -75,43 +110,26 @@
 					<?php $prev = D('Document')->prev($info); if(!empty($prev)): ?><a href="<?php echo U('?id='.$prev['id']);?>">上一篇</a><?php endif; ?>
                     <?php $next = D('Document')->next($info); if(!empty($next)): ?><a href="<?php echo U('?id='.$next['id']);?>">下一篇</a><?php endif; ?>
 				</span>
-			</p>
-		</div>
-	</header>
+            </p>
+        </div>
+    </header>
 
-<div id="main-container" class="container">
-    <div class="row">
-        
-        <!-- 左侧 nav
-        ================================================== -->
-            <div class="span3 bs-docs-sidebar">
-                
-                <ul class="nav nav-list bs-docs-sidenav">
-                    <?php echo W('Category/lists', array($category['id'], ACTION_NAME == 'index'));?>
-                </ul>
-            </div>
-        
-        
     <a href="/">首页</a> &gt; <a href="<?php echo U('Article/lists?category=' . $category['name']);?>"><?php echo ($category["title"]); ?></a> &gt; <?php echo ($info["title"]); ?>
     <div class="span9 main-content">
         <!-- Contents
         ================================================== -->
         <section id="contents"><?php echo ($info["content"]); ?></section>
         <hr/>
-        <?php echo hook('documentDetailAfter',$info);?>
+        <!--<?php echo hook('documentDetailAfter',$info);?>-->
     </div>
 
-    </div>
 </div>
+    <!--main end-->
 
-<script type="text/javascript">
-    $(function(){
-        $(window).resize(function(){
-            $("#main-container").css("min-height", $(window).height() - 343);
-        }).resize();
-    })
-</script>
-	<!-- /主体 -->
-
+    <!--footer start-->
+    <p class="footer"><a href="default.htm">手机版</a><a id="return" href="javascript:void(0)" onClick="scroll(0,0)">回顶部</a>
+    更多>><a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+</p>
+    <!--footer end-->
 </body>
 </html>

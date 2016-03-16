@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-03-13 23:21:15
+Date: 2016-03-16 18:39:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -65,7 +65,7 @@ CREATE TABLE `ot_action_log` (
   KEY `action_ip_ix` (`action_ip`),
   KEY `action_id_ix` (`action_id`),
   KEY `user_id_ix` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='行为日志表';
+) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='行为日志表';
 
 -- ----------------------------
 -- Records of ot_action_log
@@ -114,6 +114,14 @@ INSERT INTO `ot_action_log` VALUES ('42', '7', '1', '2130706433', 'model', '4', 
 INSERT INTO `ot_action_log` VALUES ('43', '1', '1', '2130706433', 'member', '1', 'admin在2016-03-13 14:46登录了后台', '1', '1457851588');
 INSERT INTO `ot_action_log` VALUES ('44', '7', '1', '2130706433', 'model', '4', '操作url：/index.php?s=/Admin/Model/update.html', '1', '1457859405');
 INSERT INTO `ot_action_log` VALUES ('45', '8', '1', '2130706433', 'attribute', '46', '操作url：/index.php?s=/Admin/Attribute/update.html', '1', '1457859435');
+INSERT INTO `ot_action_log` VALUES ('46', '1', '1', '2130706433', 'member', '1', 'admin在2016-03-16 15:02登录了后台', '1', '1458111775');
+INSERT INTO `ot_action_log` VALUES ('47', '8', '1', '2130706433', 'attribute', '47', '操作url：/index.php?s=/Admin/Attribute/update.html', '1', '1458113883');
+INSERT INTO `ot_action_log` VALUES ('48', '7', '1', '2130706433', 'model', '7', '操作url：/index.php?s=/Admin/Model/update.html', '1', '1458113930');
+INSERT INTO `ot_action_log` VALUES ('49', '7', '1', '2130706433', 'model', '7', '操作url：/index.php?s=/Admin/Model/update.html', '1', '1458114244');
+INSERT INTO `ot_action_log` VALUES ('50', '7', '1', '2130706433', 'model', '7', '操作url：/index.php?s=/Admin/Model/update.html', '1', '1458114682');
+INSERT INTO `ot_action_log` VALUES ('51', '8', '1', '2130706433', 'attribute', '47', '操作url：/index.php?s=/Admin/Attribute/update.html', '1', '1458114944');
+INSERT INTO `ot_action_log` VALUES ('52', '8', '1', '2130706433', 'attribute', '47', '操作url：/index.php?s=/Admin/Attribute/update.html', '1', '1458114958');
+INSERT INTO `ot_action_log` VALUES ('53', '8', '1', '2130706433', 'attribute', '45', '操作url：/index.php?s=/Admin/Attribute/update.html', '1', '1458114970');
 
 -- ----------------------------
 -- Table structure for ot_addons
@@ -142,7 +150,7 @@ INSERT INTO `ot_addons` VALUES ('3', 'DevTeam', '开发团队信息', '开发团
 INSERT INTO `ot_addons` VALUES ('4', 'SystemInfo', '系统环境信息', '用于显示一些服务器的信息', '1', '{\"title\":\"\\u7cfb\\u7edf\\u4fe1\\u606f\",\"width\":\"2\",\"display\":\"1\"}', 'thinkphp', '0.1', '1379512036', '0');
 INSERT INTO `ot_addons` VALUES ('5', 'Editor', '前台编辑器', '用于增强整站长文本的输入和显示', '1', '{\"editor_type\":\"2\",\"editor_wysiwyg\":\"1\",\"editor_height\":\"300px\",\"editor_resize_type\":\"1\"}', 'thinkphp', '0.1', '1379830910', '0');
 INSERT INTO `ot_addons` VALUES ('6', 'Attachment', '附件', '用于文档模型上传附件', '1', 'null', 'thinkphp', '0.1', '1379842319', '1');
-INSERT INTO `ot_addons` VALUES ('9', 'SocialComment', '通用社交化评论', '集成了各种社交化评论插件，轻松集成到系统中。', '1', '{\"comment_type\":\"1\",\"comment_uid_youyan\":\"\",\"comment_short_name_duoshuo\":\"\",\"comment_data_list_duoshuo\":\"\"}', 'thinkphp', '0.1', '1380273962', '0');
+INSERT INTO `ot_addons` VALUES ('9', 'SocialComment', '通用社交化评论', '集成了各种社交化评论插件，轻松集成到系统中。', '0', '{\"comment_type\":\"1\",\"comment_uid_youyan\":\"1978503\",\"comment_short_name_duoshuo\":\"\",\"comment_data_list_duoshuo\":\"\"}', 'thinkphp', '0.1', '1380273962', '0');
 INSERT INTO `ot_addons` VALUES ('16', 'UploadImages', '上传多图', '上传多图插件', '1', 'null', '网络', '0.1', '1457245704', '0');
 
 -- ----------------------------
@@ -199,7 +207,7 @@ CREATE TABLE `ot_attribute` (
   `auto_type` varchar(25) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `model_id` (`model_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COMMENT='模型属性表';
+) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COMMENT='模型属性表';
 
 -- ----------------------------
 -- Records of ot_attribute
@@ -248,8 +256,9 @@ INSERT INTO `ot_attribute` VALUES ('41', 'is_recommend', '是否推荐', 'char(5
 INSERT INTO `ot_attribute` VALUES ('42', 'name', '视频名称', 'varchar(255) NOT NULL', 'string', '', '', '1', '', '6', '0', '1', '1457248626', '1457248626', '', '3', '', 'regex', '', '3', 'function');
 INSERT INTO `ot_attribute` VALUES ('43', 'url', '视频地址', 'varchar(255) NOT NULL', 'string', '', '', '1', '', '6', '0', '1', '1457248646', '1457248646', '', '3', '', 'regex', '', '3', 'function');
 INSERT INTO `ot_attribute` VALUES ('44', 'url', '图片链接', 'varchar(255) NOT NULL', 'string', '', '', '1', '', '7', '0', '1', '1457774229', '1457774229', '', '3', '', 'regex', '', '3', 'function');
-INSERT INTO `ot_attribute` VALUES ('45', 'image', '图片', 'int(10) UNSIGNED NOT NULL', 'picture', '', '', '1', '', '7', '0', '1', '1457774255', '1457774255', '', '3', '', 'regex', '', '3', 'function');
+INSERT INTO `ot_attribute` VALUES ('45', 'image', '图片', 'int(10) UNSIGNED NOT NULL', 'picture', '', '图片规格：640×260', '1', '', '7', '1', '1', '1458114970', '1457774255', '', '3', '', 'regex', '', '3', 'function');
 INSERT INTO `ot_attribute` VALUES ('46', 'download_url', '下载链接', 'varchar(255) NOT NULL', 'string', '', '', '1', '', '4', '0', '1', '1457859435', '1457859435', '', '3', '', 'regex', '', '3', 'function');
+INSERT INTO `ot_attribute` VALUES ('47', 'description', '缩略图展示文字', 'varchar(255) NOT NULL', 'string', '', '', '1', '', '7', '0', '1', '1458114958', '1458113883', '', '3', '', 'regex', '', '3', 'function');
 
 -- ----------------------------
 -- Table structure for ot_auth_extend
@@ -707,12 +716,12 @@ CREATE TABLE `ot_document` (
 -- ----------------------------
 INSERT INTO `ot_document` VALUES ('1', '1', '', 'OneThink1.0正式版发布', '2', '大家期待的OneThink正式版发布', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '15', '0', '0', '0', '1387260660', '1387263112', '1');
 INSERT INTO `ot_document` VALUES ('2', '1', '', '这是一篇华丽丽的文章', '2', '这是一篇华丽丽的文章', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '4', '0', '0', '0', '1457187300', '1457243627', '1');
-INSERT INTO `ot_document` VALUES ('3', '1', '', '火影究极风暴4攻略', '39', '火影究极风暴4攻略', '0', '0', '2', '2', '0', '0', '5', '1', '0', '0', '1', '0', '0', '0', '1457243040', '1457259181', '1');
+INSERT INTO `ot_document` VALUES ('3', '1', '', '火影究极风暴4攻略', '39', '火影究极风暴4攻略', '0', '0', '2', '2', '0', '0', '5', '1', '0', '0', '2', '0', '0', '0', '1457243040', '1457259181', '1');
 INSERT INTO `ot_document` VALUES ('4', '1', '', '女神联盟是一款很弱鸡的游戏', '39', '女神联盟是一款很弱鸡的游戏', '0', '0', '2', '2', '0', '0', '4', '1', '0', '0', '1', '0', '0', '0', '1457246280', '1457259152', '1');
 INSERT INTO `ot_document` VALUES ('5', '1', '', '火影太好玩了', '2', '火影太好玩了', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '2', '0', '0', '0', '1457246679', '1457246679', '1');
 INSERT INTO `ot_document` VALUES ('6', '1', '', '啊', '39', '啊', '0', '0', '2', '2', '0', '0', '4', '1', '1457395200', '0', '0', '0', '0', '0', '1457247780', '1457259157', '-1');
 INSERT INTO `ot_document` VALUES ('7', '1', '', '《三国志乱消》四大绝色美人卡牌技能详解', '39', '《三国志乱消》四大绝色美人卡牌技能详解', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '4', '0', '0', '0', '1457259729', '1457259729', '1');
-INSERT INTO `ot_document` VALUES ('8', '1', '', '《天天小师妹》职业介绍 职业选择攻略', '39', '《天天小师妹》职业介绍 职业选择攻略', '0', '0', '2', '2', '0', '0', '4', '1', '0', '0', '3', '0', '0', '0', '1457259720', '1457260317', '1');
+INSERT INTO `ot_document` VALUES ('8', '1', '', '《天天小师妹》职业介绍 职业选择攻略', '39', '《天天小师妹》职业介绍 职业选择攻略', '0', '0', '2', '2', '0', '0', '4', '1', '0', '0', '9', '0', '0', '0', '1457259720', '1457260317', '1');
 INSERT INTO `ot_document` VALUES ('9', '1', '', '《全民切水果》蜕变之旅变得更加精彩纷呈 来体验下？', '40', '《全民切水果》蜕变之旅变得更加精彩纷呈 来体验下？', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '1457764213', '1457764213', '1');
 INSERT INTO `ot_document` VALUES ('10', '1', '', '《全民切水果》蜕变之旅变得更加精彩纷呈 来体验下？', '40', '《全民切水果》蜕变之旅变得更加精彩纷呈 来体验下？', '0', '0', '2', '2', '0', '0', '6', '1', '518400', '0', '0', '0', '0', '0', '1457764200', '1457765327', '1');
 INSERT INTO `ot_document` VALUES ('11', '1', '', '新游速递', '40', '新游速递', '0', '0', '2', '2', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '1457765338', '1457765338', '1');
@@ -906,7 +915,7 @@ CREATE TABLE `ot_member` (
 -- ----------------------------
 -- Records of ot_member
 -- ----------------------------
-INSERT INTO `ot_member` VALUES ('1', 'admin', '0', '0000-00-00', '', '20', '7', '0', '1457173625', '2130706433', '1457851588', '1');
+INSERT INTO `ot_member` VALUES ('1', 'admin', '0', '0000-00-00', '', '30', '8', '0', '1457173625', '2130706433', '1458111775', '1');
 
 -- ----------------------------
 -- Table structure for ot_menu
@@ -1083,7 +1092,7 @@ INSERT INTO `ot_model` VALUES ('3', 'download', '下载', '1', '', '1', '{\"1\":
 INSERT INTO `ot_model` VALUES ('4', 'game', '游戏', '0', '', '1', '{\"1\":[\"33\",\"34\",\"35\",\"37\",\"36\",\"38\",\"41\"]}', '1:基础', '', '', '', '', 'id:ID\r\nname:名称\r\ncategory:分类\r\nicon|get_cover_path:图标\r\nversion:版本\r\nid:操作:[EDIT]|编辑,[DELETE]|删除', '10', '', '', '1457243916', '1457859405', '1', 'MyISAM');
 INSERT INTO `ot_model` VALUES ('5', 'game_category', '游戏分类', '0', '', '1', '{\"1\":[\"39\",\"40\"]}', '1:基础', '', '', '', '', 'id:ID\r\nname:名称\r\nicon:图标\r\nid:操作:[EDIT]|编辑,[DELETE]|删除', '10', '', '', '1457243956', '1457244366', '1', 'MyISAM');
 INSERT INTO `ot_model` VALUES ('6', 'game_video', '游戏视频', '0', '', '1', '{\"1\":[\"42\",\"43\"]}', '1:基础', '', '', '', '', 'id:ID\r\nname:名称', '10', '', '', '1457248603', '1457248687', '1', 'MyISAM');
-INSERT INTO `ot_model` VALUES ('7', 'thumb', '首页缩略图', '0', '', '1', '{\"1\":[\"44\",\"45\"]}', '1:基础', '', '', '', '', 'id:ID\r\nimage:图片\r\nid:操作:[EDIT]|编辑,[DELETE]|删除', '10', '', '', '1457774191', '1457774368', '1', 'MyISAM');
+INSERT INTO `ot_model` VALUES ('7', 'thumb', '首页缩略图', '0', '', '1', '{\"1\":[\"47\",\"44\",\"45\"]}', '1:基础', '', '', '', '', 'id:ID\r\nimage|get_cover_path:图片\r\ndescription:缩略图文字\r\nid:操作:[EDIT]|编辑,[DELETE]|删除', '10', '', '', '1457774191', '1458114682', '1', 'MyISAM');
 
 -- ----------------------------
 -- Table structure for ot_picture
@@ -1098,7 +1107,7 @@ CREATE TABLE `ot_picture` (
   `status` tinyint(2) NOT NULL DEFAULT '0' COMMENT '状态',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ot_picture
@@ -1119,6 +1128,9 @@ INSERT INTO `ot_picture` VALUES ('13', '/Uploads/Picture/2016-03-13/56e52a2ba543
 INSERT INTO `ot_picture` VALUES ('14', '/Uploads/Picture/2016-03-13/56e52a5e7c789.png', '', 'cc944d2541c988df02f5eb6024d47522', '9aa27711e930e9b7f4887319823d5a4a7a9bd0df', '1', '1457859166');
 INSERT INTO `ot_picture` VALUES ('15', '/Uploads/Picture/2016-03-13/56e53fb80674b.jpg', '', '0615974f0fa2ccf7f11b0b5c27b44532', 'b1a279150ff2fbe0fc24b98e3036f2a697e617cb', '1', '1457864631');
 INSERT INTO `ot_picture` VALUES ('16', '/Uploads/Picture/2016-03-13/56e540110c94f.jpg', '', '29bcb35f6cec3649909bec9f85fd6c27', 'b6660a16e5452c1e02507deb7d439375ad71820c', '1', '1457864720');
+INSERT INTO `ot_picture` VALUES ('17', '/Uploads/Picture/2016-03-16/56e90e6b3b602.jpg', '', '8c146687b3fdd954068324b0a5550da2', '7318ff8b7f98ef59f533b45c6713ea48b2b70862', '1', '1458114155');
+INSERT INTO `ot_picture` VALUES ('18', '/Uploads/Picture/2016-03-16/56e90ee424833.jpg', '', '57336390b829210877a4d779ea8abb19', '2945ad51fe2cf5bc5dad8abbd596c7640461530c', '1', '1458114276');
+INSERT INTO `ot_picture` VALUES ('19', '/Uploads/Picture/2016-03-16/56e9104e74595.jpg', '', '301e36bfba74b5bc78b7a64fa7bd34cd', '02262cf39424adda4f9541006d544cc0cd1d7ed8', '1', '1458114638');
 
 -- ----------------------------
 -- Table structure for ot_thumb
@@ -1128,12 +1140,16 @@ CREATE TABLE `ot_thumb` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `url` varchar(255) NOT NULL COMMENT '图片链接',
   `image` int(10) unsigned NOT NULL COMMENT '图片',
+  `description` varchar(255) NOT NULL COMMENT '缩略图展示文字',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of ot_thumb
 -- ----------------------------
+INSERT INTO `ot_thumb` VALUES ('1', '', '17', '超凡蜘蛛侠2官方游戏登陆安卓');
+INSERT INTO `ot_thumb` VALUES ('2', '', '18', '掠夺之剑：暗影大陆推出汉化版');
+INSERT INTO `ot_thumb` VALUES ('3', '', '19', '里约大冒险2——愤怒的小鸟里约版更新');
 
 -- ----------------------------
 -- Table structure for ot_ucenter_admin
@@ -1198,7 +1214,7 @@ CREATE TABLE `ot_ucenter_member` (
 -- ----------------------------
 -- Records of ot_ucenter_member
 -- ----------------------------
-INSERT INTO `ot_ucenter_member` VALUES ('1', 'admin', 'e5121e482eb1bfd5e34e97817a0bd100', '1093674548@qq.com', '', '1457173625', '2130706433', '1457851588', '2130706433', '1457173625', '1');
+INSERT INTO `ot_ucenter_member` VALUES ('1', 'admin', 'e5121e482eb1bfd5e34e97817a0bd100', '1093674548@qq.com', '', '1457173625', '2130706433', '1458111775', '2130706433', '1457173625', '1');
 
 -- ----------------------------
 -- Table structure for ot_ucenter_setting

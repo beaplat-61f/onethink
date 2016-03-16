@@ -1,22 +1,29 @@
 <extend name="Base/common"/>
 
+<block name="header">
+    <include file="Public/header"/>
+</block>
+
 <block name="container">
 
     <div class="index-banner proportion" F="0.40625">
 
         <ul class="swiper-wrapper">
+            <volist name="thumbs" id="thumb">
+                <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
+                        src="{$thumb.image|get_cover='path'}" title="{$thumb.description}"></a></li>
+            </volist>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="__IMG__/game/upload/1399518651.jpg" title="掠夺之剑：暗影大陆推出汉化版"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="__IMG__/game/upload/1399518651.jpg" title="掠夺之剑：暗影大陆推出汉化版"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="__IMG__/game/upload/1399518636.jpg" title="腾讯新游《全民砰砰砰》登录iOS"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="__IMG__/game/upload/1399518636.jpg" title="腾讯新游《全民砰砰砰》登录iOS"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="__IMG__/game/upload/1399518674.jpg" title="里约大冒险2——愤怒的小鸟里约版更新"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="__IMG__/game/upload/1399518674.jpg" title="里约大冒险2——愤怒的小鸟里约版更新"></a></li>
-
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="__IMG__/game/upload/1399518692.jpg" title="超凡蜘蛛侠2官方游戏登陆安卓"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="__IMG__/game/upload/1399518692.jpg" title="超凡蜘蛛侠2官方游戏登陆安卓"></a></li>-->
 
         </ul>
 

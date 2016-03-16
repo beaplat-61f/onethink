@@ -24,4 +24,19 @@ class GameController extends HomeController
         $this->assign('game', $game);
         $this->display();
     }
+
+    /**
+     * 搜索游戏
+     * @param $keyword string 关键字
+     */
+    public function search($keyword)
+    {
+        $keyword = '%'. $keyword . '%';
+        $map = [
+            'name' => ['like', $keyword]
+        ];
+        $games = M('Game')->where($map)->select();
+        $this->assign('games', $games);
+        $this->display();
+    }
 }

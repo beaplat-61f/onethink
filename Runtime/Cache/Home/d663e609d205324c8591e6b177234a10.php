@@ -13,6 +13,21 @@
 
 <link href="/Public/Home/css/game/style.css" rel="stylesheet" media="screen">
 
+
+<style>
+    /*阿里巴巴字库*/
+    @font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1458116937_0631251.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1458116937_0631251.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1458116937_0631251.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+    .iconfont{font-family:"iconfont";
+        font-size:16px;font-style:normal;}
+</style>
+
 <script src="/Public/static/jquery-2.0.3.min.js" type="text/javascript"></script>
 
 <script src="/Public/Home/js/game/swiper-2.0.min.js" type="text/javascript"></script>
@@ -64,54 +79,54 @@
     <!--main start-->
     <div class="main">
     
+    <div class="header">
 
-        <div class="header">
+    <span id="menu">导航</span>
 
-            <span id="menu">导航</span>
+    <div id="guide">
 
-            <div id="guide">
+        <ul>
 
-                <ul>
+            <li><a href="index.html"><i class="iconfont">&#xe601;</i> 首页</a></li>
 
-                    <li><a href="index.html">首页</a></li>
+            <li><a href="android/danji.html"><i class="iconfont">&#xe600;</i> 单机</a></li>
 
-                    <li><a href="android/danji.html">单机</a></li>
+            <li><a href="android/danji.html">网游</a></li>
 
-                    <li><a href="android/danji.html">网游</a></li>
+            <li><a href="android/danji.html">应用</a></li>
 
-                    <li><a href="android/danji.html">应用</a></li>
+            <!--<li><a href="android/danji.html">攻略</a></li>-->
 
-                    <li><a href="android/danji.html">攻略</a></li>
+            <!--<li><a href="android/danji.html">资讯</a></li>-->
 
-                    <li><a href="android/danji.html">资讯</a></li>
+        </ul>
 
-                </ul>
+    </div>
 
-            </div>
+    <a class="search" href="index.html">搜索</a>
 
-            <a class="search" href="index.html">搜索</a>
+    <img class="logo" src="/Public/Home/images/game/logo.png">
 
-            <img class="logo" src="/Public/Home/images/game/logo.png">
+</div>
 
-        </div>
-    
     
 
     <div class="index-banner proportion" F="0.40625">
 
         <ul class="swiper-wrapper">
+            <?php if(is_array($thumbs)): $i = 0; $__LIST__ = $thumbs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$thumb): $mod = ($i % 2 );++$i;?><li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
+                        src="<?php echo (get_cover($thumb["image"],'path')); ?>" title="<?php echo ($thumb["description"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="/Public/Home/images/game/upload/1399518651.jpg" title="掠夺之剑：暗影大陆推出汉化版"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="/Public/Home/images/game/upload/1399518651.jpg" title="掠夺之剑：暗影大陆推出汉化版"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="/Public/Home/images/game/upload/1399518636.jpg" title="腾讯新游《全民砰砰砰》登录iOS"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="/Public/Home/images/game/upload/1399518636.jpg" title="腾讯新游《全民砰砰砰》登录iOS"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="/Public/Home/images/game/upload/1399518674.jpg" title="里约大冒险2——愤怒的小鸟里约版更新"></a></li>-->
 
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="/Public/Home/images/game/upload/1399518674.jpg" title="里约大冒险2——愤怒的小鸟里约版更新"></a></li>
-
-            <li class="swiper-slide"><a href="android/12234.html" target="_blank"><img
-                    src="/Public/Home/images/game/upload/1399518692.jpg" title="超凡蜘蛛侠2官方游戏登陆安卓"></a></li>
+            <!--<li class="swiper-slide"><a href="android/12234.html" target="_blank"><img-->
+                    <!--src="/Public/Home/images/game/upload/1399518692.jpg" title="超凡蜘蛛侠2官方游戏登陆安卓"></a></li>-->
 
         </ul>
 

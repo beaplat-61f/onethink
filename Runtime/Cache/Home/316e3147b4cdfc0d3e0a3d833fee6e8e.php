@@ -68,7 +68,7 @@
     
     <div class="back_nav">
 
-        <a class="back" href="../index.html">游戏详情</a>
+        <a class="back" href="javascript:;" onclick="history.go(-1)">返回</a>
 
         <span id="menu">导航</span>
 

@@ -27,10 +27,11 @@ class IndexController extends HomeController {
 //        $this->assign('lists',$lists);//列表
 //        $this->assign('page',D('Document')->page);//分页
 
+        // 首页缩略图
+        $thumbs = M('Thumb')->order('id desc')->limit(4)->select();
+
         // 最新资讯
-        /**
-         * @var $document DocumentModel
-         */
+        /** @var DocumentModel $document */
         $document = D('Document');
         $news = $document->lists(40);
 
@@ -42,11 +43,13 @@ class IndexController extends HomeController {
         $strategyTop = array_slice($strategy, 0, 2);
         $strategyBottom = array_slice($strategy, 2, 4);
 
+
         $data = [
             'newsTop' => $newsTop,
             'newsBottom' => $newsBottom,
             'strategyTop' => $strategyTop,
             'strategyBottom' => $strategyBottom,
+            'thumbs' => $thumbs
         ];
         $this->assign($data);
         $this->display();

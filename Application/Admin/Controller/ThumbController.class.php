@@ -1,9 +1,9 @@
 <?php
 namespace Admin\Controller;
 
-class GameController extends ThinkController
+class ThumbController extends ThinkController
 {
-    private $model_name = 'game'; /*在OneThink模型管理中查看自己模型标识（不是名称）修改此处*/
+    private $model_name = 'thumb'; /*在OneThink模型管理中查看自己模型标识（不是名称）修改此处*/
 
     public function index()
     {

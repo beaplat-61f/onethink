@@ -1,10 +1,10 @@
 <extend name="Base/common"/>
 
-<block name="header">
+<block name="container">
     <header class="jumbotron subhead" id="overview">
-		<div class="container">
-			<h2>{$info.title}</h2>
-			<p>
+        <div class="container">
+            <h2>{$info.title}</h2>
+            <p>
 				<span  class="pull-left">
 					<span class="author">{$info.uid|get_username}</span>
 					<span> 发表于 {$info.create_time|date='Y-m-d H:i',###}</span>
@@ -17,18 +17,16 @@
                         <a href="{:U('?id='.$next['id'])}">下一篇</a>
                     </article:next>
 				</span>
-			</p>
-		</div>
-	</header>
-</block>
+            </p>
+        </div>
+    </header>
 
-<block name="body">
     <a href="/">首页</a> &gt; <a href="{:U('Article/lists?category=' . $category['name'])}">{$category.title}</a> &gt; {$info.title}
     <div class="span9 main-content">
         <!-- Contents
         ================================================== -->
         <section id="contents">{$info.content}</section>
         <hr/>
-        {:hook('documentDetailAfter',$info)}
+        <!--{:hook('documentDetailAfter',$info)}-->
     </div>
 </block>
