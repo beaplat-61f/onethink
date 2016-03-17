@@ -58,14 +58,28 @@
 
                 <a href="android/danji.html" class="more">更多</a>
 
-                <h3>推荐手游</h3>
+                <h3>最新上架</h3>
 
             </div>
 
         </div>
 
         <ul class="gamelist">
+            <volist name="games" id="game">
+                <li>
 
+                    <a href="/index.php/Home/Game/show/id/{$game.id}"><img src="{$game.icon|get_cover='path'}" alt="掌上炸翻天"></a>
+
+                    <h3><a href="android/12234.html">{$game.name}</a></h3>
+
+                    <p>人气：677</p>
+
+                    <p>大小：6.9 MB</p>
+
+                    <a class="btn_down" href="android/12234.html">抢先下载</a>
+
+                </li>
+            </volist>
             <li>
 
                 <a href="android/12234.html"><img src="__IMG__/game/upload/1397724791.jpg" alt="掌上炸翻天"></a>

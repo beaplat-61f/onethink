@@ -14,6 +14,19 @@
 <link href="/Public/Home/css/game/style.css" rel="stylesheet" media="screen">
 
 
+<style>
+    /*阿里巴巴字库*/
+    @font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1458116937_0631251.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1458116937_0631251.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1458116937_0631251.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+    .iconfont{font-family:"iconfont";
+        font-size:16px;font-style:normal;}
+</style>
 
 <script src="/Public/static/jquery-2.0.3.min.js" type="text/javascript"></script>
 
@@ -67,7 +80,9 @@
     <div class="main">
     
 
-        <div class="header">
+        <div class="back_nav">
+
+            <a class="back" href="javascript:;" onclick="history.go(-1)">返回</a>
 
             <span id="menu">导航</span>
 
@@ -75,25 +90,21 @@
 
                 <ul>
 
-                    <li><a href="index.html">首页</a></li>
+                    <li><a href="../index.html">首页</a></li>
 
-                    <li><a href="android/danji.html">单机</a></li>
+                    <li><a href="danji.html">单机</a></li>
 
-                    <li><a href="android/danji.html">网游</a></li>
+                    <li><a href="danji.html">网游</a></li>
 
-                    <li><a href="android/danji.html">应用</a></li>
+                    <li><a href="danji.html">应用</a></li>
 
-                    <li><a href="android/danji.html">攻略</a></li>
+                    <li><a href="danji.html">攻略</a></li>
 
-                    <li><a href="android/danji.html">资讯</a></li>
+                    <li><a href="danji.html">资讯</a></li>
 
                 </ul>
 
             </div>
-
-            <a class="search" href="index.html">搜索</a>
-
-            <img class="logo" src="/Public/Home/images/game/logo.png">
 
         </div>
     

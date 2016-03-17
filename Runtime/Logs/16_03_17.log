@@ -1,0 +1,674 @@
+[ 2016-03-17T19:26:50+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458214010 ) AND ( deadline = 0 OR deadline > 1458214010 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214010 ) AND ( deadline = 0 OR deadline > 1458214010 ) ORDER BY `id` DESC  [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:28:07+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458214087 ) AND ( deadline = 0 OR deadline > 1458214087 ) ORDER BY `id` DESC  [ RunTime:0.000501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214087 ) AND ( deadline = 0 OR deadline > 1458214087 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:38:42+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214722 ) AND ( deadline = 0 OR deadline > 1458214722 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214722 ) AND ( deadline = 0 OR deadline > 1458214722 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:42:25+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458214945 ) AND ( deadline = 0 OR deadline > 1458214945 ) ORDER BY `id` DESC  [ RunTime:0.000501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214945 ) AND ( deadline = 0 OR deadline > 1458214945 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T19:42:27+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214947 ) AND ( deadline = 0 OR deadline > 1458214947 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458214947 ) AND ( deadline = 0 OR deadline > 1458214947 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T19:45:57+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215157 ) AND ( deadline = 0 OR deadline > 1458215157 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215157 ) AND ( deadline = 0 OR deadline > 1458215157 ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-03-17T19:46:58+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002001s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215218 ) AND ( deadline = 0 OR deadline > 1458215218 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215218 ) AND ( deadline = 0 OR deadline > 1458215218 ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-03-17T19:47:18+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/detail/id/8.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type` FROM `ot_model` WHERE ( `status` = 1 ) AND ( `extend` = 1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 8 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '8' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '8' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 8 ) AND ( `status` = 1 )  [ RunTime:0.000000s ]
+INFO: Run Attachment [ RunTime:0.005501s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.006001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:47:22+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/detail/id/7.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '7' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '7' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.002001s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 7 ) AND ( `status` = 1 )  [ RunTime:0.000500s ]
+INFO: Run Attachment [ RunTime:0.005501s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.006001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:47:24+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/detail/id/7.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.004501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '7' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '7' ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 7 ) AND ( `status` = 1 )  [ RunTime:0.000000s ]
+INFO: Run Attachment [ RunTime:0.005501s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.006001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:49:49+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.003500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215389 ) AND ( deadline = 0 OR deadline > 1458215389 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215389 ) AND ( deadline = 0 OR deadline > 1458215389 ) LIMIT 1   [ RunTime:0.000501s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 162 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T19:52:43+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002001s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215563 ) AND ( deadline = 0 OR deadline > 1458215563 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215563 ) AND ( deadline = 0 OR deadline > 1458215563 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:53:02+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.003501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215582 ) AND ( deadline = 0 OR deadline > 1458215582 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 139 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 139 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 139 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 139 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215582 ) AND ( deadline = 0 OR deadline > 1458215582 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-17T19:54:14+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.004501s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215654 ) AND ( deadline = 0 OR deadline > 1458215654 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215654 ) AND ( deadline = 0 OR deadline > 1458215654 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-03-17T19:56:46+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.003500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215806 ) AND ( deadline = 0 OR deadline > 1458215806 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215806 ) AND ( deadline = 0 OR deadline > 1458215806 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T19:56:52+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.003501s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215812 ) AND ( deadline = 0 OR deadline > 1458215812 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215812 ) AND ( deadline = 0 OR deadline > 1458215812 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T19:56:59+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.003500s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215819 ) AND ( deadline = 0 OR deadline > 1458215819 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215819 ) AND ( deadline = 0 OR deadline > 1458215819 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-17T19:57:07+08:00 ] 127.0.0.1 /index.php?s=/Home/Article/lists/category/strategy.html
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'strategy' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215827 ) AND ( deadline = 0 OR deadline > 1458215827 ) ORDER BY `id` DESC LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+NOTIC: [8] Undefined variable: strategy D:\wamp\www\VirtualBox\onethink\Runtime\Cache\Home\48d4bc3d2f510193dcfe8428f547fac0.php 第 137 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458215827 ) AND ( deadline = 0 OR deadline > 1458215827 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T20:03:45+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `ot_game` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458216225 ) AND ( deadline = 0 OR deadline > 1458216225 ) ORDER BY `id` DESC  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458216225 ) AND ( deadline = 0 OR deadline > 1458216225 ) ORDER BY `id` DESC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 8 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T20:04:28+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_game` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458216268 ) AND ( deadline = 0 OR deadline > 1458216268 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458216268 ) AND ( deadline = 0 OR deadline > 1458216268 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 2 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T20:05:15+08:00 ] 127.0.0.1 /index.php?s=/Home/Game/show/id/1
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 9 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 10 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 11 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 12 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T20:05:32+08:00 ] 127.0.0.1 /index.php/Home/Game/show/id/1
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 9 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 10 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 11 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 12 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T20:05:52+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_game` ORDER BY id desc  [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002501s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458216352 ) AND ( deadline = 0 OR deadline > 1458216352 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458216352 ) AND ( deadline = 0 OR deadline > 1458216352 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 8 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T20:05:53+08:00 ] 127.0.0.1 /index.php/Home/Game/show/id/1
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 9 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 10 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 11 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 12 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 13 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T20:06:10+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `ot_thumb` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_thumb` ORDER BY id desc LIMIT 4   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_game` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.002500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1458216370 ) AND ( deadline = 0 OR deadline > 1458216370 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 39 ) AND ( `create_time` < 1458216370 ) AND ( deadline = 0 OR deadline > 1458216370 ) ORDER BY `id` DESC  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 2 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-17T20:06:11+08:00 ] 127.0.0.1 /index.php/Home/Game/show/id/4
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 8 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T20:06:15+08:00 ] 127.0.0.1 /index.php/Home/Game/show/id/3
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 7 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-17T20:06:17+08:00 ] 127.0.0.1 /index.php/Home/Game/show/id/1
+SQL: SHOW COLUMNS FROM `ot_game` [ RunTime:0.004500s ]
+SQL: SELECT * FROM `ot_game` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `ot_picture` [ RunTime:0.003500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 14 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 9 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 10 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 11 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 12 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `ot_picture` WHERE ( `status` = 1 ) AND ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

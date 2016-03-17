@@ -30,6 +30,9 @@ class IndexController extends HomeController {
         // 首页缩略图
         $thumbs = M('Thumb')->order('id desc')->limit(4)->select();
 
+        // 最新上架
+        $games = M('Game')->order('id desc')->select();
+
         // 最新资讯
         /** @var DocumentModel $document */
         $document = D('Document');
@@ -46,6 +49,7 @@ class IndexController extends HomeController {
 
         $data = [
             'newsTop' => $newsTop,
+            'games' => $games,
             'newsBottom' => $newsBottom,
             'strategyTop' => $strategyTop,
             'strategyBottom' => $strategyBottom,

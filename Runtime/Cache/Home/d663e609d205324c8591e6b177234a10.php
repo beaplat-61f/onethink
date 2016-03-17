@@ -161,14 +161,26 @@
 
                 <a href="android/danji.html" class="more">更多</a>
 
-                <h3>推荐手游</h3>
+                <h3>最新上架</h3>
 
             </div>
 
         </div>
 
         <ul class="gamelist">
+            <?php if(is_array($games)): $i = 0; $__LIST__ = $games;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?><li>
 
+                    <a href="/index.php/Home/Game/show/id/<?php echo ($game["id"]); ?>"><img src="<?php echo (get_cover($game["icon"],'path')); ?>" alt="掌上炸翻天"></a>
+
+                    <h3><a href="android/12234.html"><?php echo ($game["name"]); ?></a></h3>
+
+                    <p>人气：677</p>
+
+                    <p>大小：6.9 MB</p>
+
+                    <a class="btn_down" href="android/12234.html">抢先下载</a>
+
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
             <li>
 
                 <a href="android/12234.html"><img src="/Public/Home/images/game/upload/1397724791.jpg" alt="掌上炸翻天"></a>

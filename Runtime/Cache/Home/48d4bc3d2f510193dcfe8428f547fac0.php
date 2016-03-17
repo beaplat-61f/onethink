@@ -14,6 +14,19 @@
 <link href="/Public/Home/css/game/style.css" rel="stylesheet" media="screen">
 
 
+<style>
+    /*阿里巴巴字库*/
+    @font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1458116937_0631251.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1458116937_0631251.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1458116937_0631251.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1458116937_0631251.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+    .iconfont{font-family:"iconfont";
+        font-size:16px;font-style:normal;}
+</style>
 
 <script src="/Public/static/jquery-2.0.3.min.js" type="text/javascript"></script>
 
@@ -67,7 +80,9 @@
     <div class="main">
     
 
-        <div class="header">
+        <div class="back_nav">
+
+            <a class="back" href="javascript:;" onclick="history.go(-1)">返回</a>
 
             <span id="menu">导航</span>
 
@@ -75,55 +90,71 @@
 
                 <ul>
 
-                    <li><a href="index.html">首页</a></li>
+                    <li><a href="../index.html">首页</a></li>
 
-                    <li><a href="android/danji.html">单机</a></li>
+                    <li><a href="danji.html">单机</a></li>
 
-                    <li><a href="android/danji.html">网游</a></li>
+                    <li><a href="danji.html">网游</a></li>
 
-                    <li><a href="android/danji.html">应用</a></li>
+                    <li><a href="danji.html">应用</a></li>
 
-                    <li><a href="android/danji.html">攻略</a></li>
+                    <li><a href="danji.html">攻略</a></li>
 
-                    <li><a href="android/danji.html">资讯</a></li>
+                    <li><a href="danji.html">资讯</a></li>
 
                 </ul>
 
             </div>
 
-            <a class="search" href="index.html">搜索</a>
-
-            <img class="logo" src="/Public/Home/images/game/logo.png">
-
         </div>
     
     
-    <a href="/">首页</a> &gt; <?php echo ($category["title"]); ?>
-    <div class="span9">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
 
-            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="">
-                    <h3 class="ellipsis"><a href="<?php echo U('Article/detail?id='.$data['id']);?>"><?php echo ($data["title"]); ?></a></h3>
-                </div>
-                <div>
-                    <p class="lead"><?php echo ($data["description"]); ?></p>
-                </div>
-                <div>
-                    <span><a href="<?php echo U('Article/detail?id='.$data['id']);?>">查看全文</a></span>
-					<span class="pull-right">
-						<span class="author"><?php echo (get_username($data["uid"])); ?></span>&nbsp;&nbsp;
-						<span>发表于 <?php echo (date('Y-m-d H:i:s',$data["create_time"])); ?></span>
-						<span>阅读(<?php echo ($data["view"]); ?>)</span>&nbsp;&nbsp;
-                </div>
-                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
 
-            <div class="onethink pagination pagination-right pagination-large">
-                <?php $__PAGE__ = new \Think\Page(get_list_count($category['id']), $category['list_row']);echo $__PAGE__->show(); ?>
+    <div class="box">
+
+        <div class="hd">
+
+            <ins></ins>
+
+            <div class="over">
+
+                <h3>
+                    <a href="/">首页</a> &gt; <?php echo ($category["title"]); ?>
+                </h3>
+
             </div>
-        </section>
-    </div>
+
+        </div>
+
+        <dl class="newslist">
+
+            <dt>
+
+            <ul>
+                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>
+
+                        <a href="gl/81927.html" target="_blank"><img src="<?php echo (get_cover($strategy["cover_id"],'path')); ?>">
+
+                            <h3><a href="gl/81927.html" target="_blank"><?php echo ($data["title"]); ?></a></h3>
+
+                            <p><?php echo ($data["description"]); ?></p>
+
+                            <p><?php echo (date('Y-m-d H:i:s',$data["create_time"])); ?></p>
+                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+
+            </ul>
+
+            </dt>
+            <dd>
+                <!--PAGE BEGIN-->
+                <div class="onethink pagination pagination-right pagination-large">
+                    <?php $__PAGE__ = new \Think\Page(get_list_count($category['id']), $category['list_row']);echo $__PAGE__->show(); ?>
+                </div>
+                <!--PAGE END-->
+            </dd>
+        </dl>
+
     </div>
 
 </div>
